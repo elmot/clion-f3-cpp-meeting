@@ -4,7 +4,12 @@
 
 #ifndef CLION_F3_CPP_MEETING_LEDCONTROL_HPP
 #define CLION_F3_CPP_MEETING_LEDCONTROL_HPP
+
+#include <chrono>
+using namespace std::literals::chrono_literals;
+
 extern "C" [[noreturn]]  void cppMain();
+extern "C" void HAL_Delay(uint32_t ms);
 
 class Light {
 public:
@@ -63,6 +68,8 @@ private:
     unsigned char ledBits = 0;
 };
 
-void sleep(unsigned ms);
+inline void sleepTime(const std::chrono::duration<double, std::ratio<1,1000>> &t){
+  HAL_Delay(t.count());
+}
 
 #endif //CLION_F3_CPP_MEETING_LEDCONTROL_HPP

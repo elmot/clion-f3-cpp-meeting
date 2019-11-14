@@ -103,7 +103,4 @@ Light Light::operator<<=(unsigned int b) {
     return *this;
 }
 
-void sleep(unsigned ms) {
-    HAL_Delay(ms);
-}
 
