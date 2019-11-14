@@ -3,7 +3,7 @@
 // Created by Ilia.Motornyi on 12/11/2019.
 //
 
-#include "ledcontrol.h"
+#include "ledcontrol.hpp"
 #include "main.h"
 
 enum bits {

@@ -2,8 +2,8 @@
 // Created by Ilia.Motornyi on 12/11/2019.
 //
 
-#ifndef CLION_F3_CPP_MEETING_LEDCONTROL_H
-#define CLION_F3_CPP_MEETING_LEDCONTROL_H
+#ifndef CLION_F3_CPP_MEETING_LEDCONTROL_HPP
+#define CLION_F3_CPP_MEETING_LEDCONTROL_HPP
 extern "C" [[noreturn]]  void cppMain();
 
 class Light {
@@ -65,4 +65,4 @@ private:
 
 void sleep(unsigned ms);
 
-#endif //CLION_F3_CPP_MEETING_LEDCONTROL_H
+#endif //CLION_F3_CPP_MEETING_LEDCONTROL_HPP
